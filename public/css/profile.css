@@ -1,0 +1,123 @@
+.title
+{
+    padding-top: 70px;
+    color: #5f5d69;
+}
+
+.sub-title
+{
+    color: #5f5d69;
+    padding-bottom: 4vh;
+}
+.img-details
+{
+    display: flex;
+    align-items: flex-end;
+    padding-top: 5vh;
+    padding-bottom: 4vh;
+}
+
+.user-name
+{
+    padding-left: 4vh;
+}
+
+.profile-info, .dashboard-content-1
+{
+    background-color: white;  
+    border-radius: 10px;
+    box-shadow: 0px 5px 16px rgba(0, 0, 0, 0.1);
+    
+}
+
+.profile-main
+{
+    padding-left: 20vh;
+    padding-right: 20vh;
+}
+
+.name-container
+{
+    padding: 4vh 0vh 4vh 6vh;
+}
+
+.email-container
+{
+    padding: 0vh 0vh 4vh 6vh;
+}
+
+.col-lg-3
+{
+    padding-right: 20px;
+}
+
+.info-1
+{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.symbol
+{
+    padding-top: 20px;
+    margin-left: 30px;
+    width: 40%;
+}
+
+.info-1, .readings-1, .readings-2
+{
+    padding-left: 30px
+}
+
+
+.more-icon
+{
+    float: right;
+    margin-top: 30px;
+}
+
+.readings-1
+{
+    padding-top:15px;
+    font-size: 30px;
+    color: #707070;
+    padding-bottom: 15px;
+}
+
+.readings-2
+{
+    color: #707070;
+    padding-bottom: 25px;
+}
+
+.monthly
+{
+    padding: 10vh 0vh;
+}
+
+.name{
+    color: #5f5d69;
+}
+
+.user-name-1
+{
+    font-size: 20px;
+}
+
+.name-cont, .email-cont
+{
+    display: flex;
+    align-items: flex-start;
+}
+
+.edit-button
+{
+    background-color: #6777ef;
+    font-weight: 600;
+    color: white;
+    padding: 8px 15px 8px 15px;
+    border: 0px;
+    border-radius: 5px;
+    margin-right: 6vh;
+    margin-left: auto;
+}

@@ -1,0 +1,77 @@
+.dashboard-content-1, .dashboard-content-2, .dashboard-content-3, .dashboard-content-4
+{
+    background-color: white;  
+    padding-right: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 16px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-main
+{
+    padding-left: 30vh;
+    padding-right: 30vh;
+}
+
+.col-6
+{
+    padding-bottom: 4vh;
+    padding-right: 20px;
+}
+
+.info, .units
+{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.units
+{
+    color: #707070;
+}
+
+.symbol
+{
+    padding-top: 20px;
+    margin-left: 30px;
+    width: 40%;
+}
+
+.info, .readings, .units
+{
+    padding-left: 8vh;
+}
+
+.units
+{
+    padding-bottom: 25px;
+}
+
+.more-icon
+{
+    float: right;
+    margin-top: 30px;
+}
+
+.readings
+{
+    font-size: 50px;
+}
+
+.ECG-title
+{
+    padding-top: 5%;
+    color: #5f5d69;
+}
+
+.ECG
+{    
+    padding-bottom: 20px;
+}
+
+@media screen and (min-width: 768px){
+    #myChart
+    {
+        height: 800px;
+    }
+}
+
