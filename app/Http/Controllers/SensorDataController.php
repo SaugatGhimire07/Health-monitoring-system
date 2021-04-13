@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 use App\Models\SensorData;
 use App\Models\User;
 use App\Notifications\dataNotify;
+use App\Notifications\tempRaiseNotify;
 
 use Illuminate\Support\Facades\Notification;
 use Illuminate\Support\Facades\DB;
@@ -43,7 +44,14 @@ class SensorDataController extends Controller
         
         $admin = User::where('email', 'ghimiresaugat987@gmail.com')->get();
         Notification::send($admin, new dataNotify()); 
+        
+        foreach($temperaturedata as $temp){
+            $temp = $temp->temperature;
+        }
 
+        if($temp > 39){
+        Notification::send($admin, new tempRaiseNotify());
+        }
 
         return view('home', compact('sensordata', 'temperaturedata', 'falldetecteddata', 'humiditydata'));
     }
