@@ -2,6 +2,10 @@
 
 namespace App\Http\Controllers;
 use App\Models\SensorData;
+use App\Models\User;
+use App\Notifications\dataNotify;
+
+use Illuminate\Support\Facades\Notification;
 use Illuminate\Support\Facades\DB;
 
 use Illuminate\Http\Request;
@@ -33,6 +37,13 @@ class SensorDataController extends Controller
                         ->orderBy('id', 'desc')
                         ->limit(1)
                         ->get();
+
+        
+        
+        
+        $admin = User::where('email', 'ghimiresaugat987@gmail.com')->get();
+        Notification::send($admin, new dataNotify()); 
+
 
         return view('home', compact('sensordata', 'temperaturedata', 'falldetecteddata', 'humiditydata'));
     }

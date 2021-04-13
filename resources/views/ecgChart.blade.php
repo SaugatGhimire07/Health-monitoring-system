@@ -15,9 +15,9 @@
   </head>
   <body>
     <div class="row">
-        <h4 class="ECG-title">ECG</h4>
+        <h3 class="title" style="padding-top:90px; margin-left:80px ">ECG</h3>
         <div class="col-lg-12 ECG" style="width: 100%; height: 75vh;">
-            <canvas id="myChart" ></canvas>
+            <canvas id="myChart" style="padding-right:80px;"></canvas>
         </div>
     </div>
     <script>
