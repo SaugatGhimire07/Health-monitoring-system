@@ -81,11 +81,8 @@
                     <div class="d-sm-none d-lg-inline-block">Hi, {{ Auth::user()->name }}</div></a>
                     <div class="dropdown-menu dropdown-menu-right">
                       <div class="dropdown-title"></div>
-                      <a href="#" class="dropdown-item has-icon">
+                      <a href="{{url('profile')}}" class="dropdown-item has-icon">
                         <i class="bx bx-user"></i> Profile
-                      </a>
-                      <a href="#" class="dropdown-item has-icon">
-                        <i class="bx bx-slider-alt"></i> Settings
                       </a>
                       <div class="dropdown-divider"></div>
                       
@@ -132,10 +129,6 @@
                             <li><a href="{{url('profile')}}" class="nav__link">
                                 <i class='bx bx-user nav__icon'></i>
                                 <span class="nav__name">Profile</span>
-                            </a></li>
-                            <li><a href="#" class="nav__link">
-                                <i class='bx bx-slider-alt nav__icon'></i>
-                                <span class="nav__name">Settings</span>
                             </a></li>
                             <li><a href="#" class="nav__link">
                                 <i class='bx bx-exit nav__icon'></i>
