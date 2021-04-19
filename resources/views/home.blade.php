@@ -20,9 +20,13 @@
                         <img src="{{ asset('images/Fall detection.png')}}" alt="Sleep" class="symbol">
                         <h5 class="info">Fall Detected</h5>
                         <h1 class="readings">
-                          @foreach($falldetecteddata as $i)
-                            {{$i->fall_detection}}
-                          @endforeach
+                          @if($fall == 1)
+                            Yes
+                          @endif
+
+                          @if($fall == 0)
+                            No
+                          @endif
                         </h1>
                         <h5 class="units">10:23 PM</h5>
                     </div>                                

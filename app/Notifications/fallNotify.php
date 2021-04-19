@@ -52,10 +52,10 @@ class fallNotify extends Notification
             $fall = $fall->fall_detection;
         }
 
-        if($fall == 'Yes' or $fall == 'yes'){
+        if($fall == 1){
         return (new MailMessage)
                     ->line('The user has just fallen to the ground.')
-                    ->action('Notification Action', url('/'))
+                    ->action('View your health status in web application', url('profile'))
                     ->line('Please do check on him/her!');
         }
     }

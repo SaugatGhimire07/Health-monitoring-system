@@ -17,11 +17,9 @@ class CreateSensorDataTable extends Migration
             $table->id();
             $table->float('temperature');
             $table->float('humidity');
-            $table->String('fall_detection');
-            $table->integer('ecg_readings');
+            $table->integer('fall_detection');
+            $table->integer('ecg');
             $table->integer('heartbeat');
-            $table->double('longitude');
-            $table->double('latitude');
             $table->timestamps();
         });
     }

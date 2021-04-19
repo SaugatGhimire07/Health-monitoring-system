@@ -55,7 +55,7 @@ class tempRaiseNotify extends Notification
         if($temp > 39){
             return (new MailMessage)
                     ->line('The introduction to the notification.')
-                    ->action('Notification Action', url('/'))
+                    ->action('View your health status in web application', url('profile'))
                     ->line('Thank you for using our application!');
         }
     }

@@ -75,7 +75,7 @@ class dataNotify extends Notification
                     ->line('Heartbeat in BPM: '.$heart)
                     ->line('Temperature in °C: '.$temp)
                     ->line('Humidity in %: '.$humidity)
-                    ->action('Notification Action', url('/'))
+                    ->action('View your health status in web application', url('profile'))
                     ->line('Thank you for using our application!');
     }
 

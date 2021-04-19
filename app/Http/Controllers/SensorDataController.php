@@ -29,6 +29,9 @@ class SensorDataController extends Controller
                     ->limit(1)
                     ->get();
 
+        foreach($falldetecteddata as $fall){
+            $fall = $fall->fall_detection;
+        }            
         $temperaturedata = DB::table('sensor_data')
                         ->select('temperature')
                         ->orderBy('id', 'desc')
@@ -65,12 +68,12 @@ class SensorDataController extends Controller
             $fall = $fall->fall_detection;
         }
 
-        if($fall == 'Yes' or $fall == 'yes'){
+        if($fall == 1){
             Notification::send($admin, new fallNotify());    
         }
 
 
-        return view('home', compact('sensordata', 'temperaturedata', 'falldetecteddata', 'humiditydata'));
+        return view('home', compact('sensordata', 'temperaturedata', 'fall', 'humiditydata'));
     }
 
     public function analyticsdata()

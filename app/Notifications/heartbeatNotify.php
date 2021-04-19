@@ -55,7 +55,7 @@ class heartbeatNotify extends Notification
         if($heartbeat > 120 or $heartbeat < 45){
             return (new MailMessage)
                     ->line('The heartbeat of the user is abnormal.')
-                    ->action('Notification Action', url('/'))
+                    ->action('View your health status in web application', url('profile'))
                     ->line('Please do check on him/her!');
         }
     }
