@@ -36,7 +36,7 @@
                                     {{$i->humidity}} %
                                 </td>
 								<td class="cell100 column5">
-                                    {{$i->ecg_readings}}
+                                    {{$i->ecg}}
                                 </td>
 							</tr>
                             @endforeach

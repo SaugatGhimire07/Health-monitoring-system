@@ -79,7 +79,7 @@ class SensorDataController extends Controller
     public function analyticsdata()
     {
         $alldata = DB::select('select * from sensor_data');
-
+        
         return view('analytics', ['alldata' => $alldata]);
     }
 
@@ -88,8 +88,8 @@ class SensorDataController extends Controller
         $minheartbeat = DB::table('sensor_data')->min('heartbeat');
         $maxheartbeat = DB::table('sensor_data')->max('heartbeat');
 
-        $minECG = DB::table('sensor_data')->min('ecg_readings');
-        $maxECG = DB::table('sensor_data')->max('ecg_readings');
+        $minECG = DB::table('sensor_data')->min('ecg');
+        $maxECG = DB::table('sensor_data')->max('ecg');
 
         $minHumidity = DB::table('sensor_data')->min('humidity');
         $maxHumidity = DB::table('sensor_data')->max('humidity');
@@ -111,7 +111,7 @@ class SensorDataController extends Controller
         
 
         $ecgDataArray = array();
-        $ecg_data = SensorData::select('ecg_readings')->pluck('ecg_readings');
+        $ecg_data = SensorData::select('ecg')->pluck('ecg');
 
         $time_array = $time_data;
         $ecgDataArray = $ecg_data;
