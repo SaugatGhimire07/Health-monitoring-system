@@ -40,7 +40,7 @@ Route::get('/home',[App\Http\Controllers\SensorDataController::class,'index']);
 
 Route::get('/profile',[App\Http\Controllers\SensorDataController::class,'mindata']);
 
-Route::get('/ecgChart',[App\Http\Controllers\SensorDataController::class,'ecgChart']);
+polaRoute::get('/ecgChart',[App\Http\Controllers\SensorDataController::class,'ecgChart']);
 
 Auth::routes();
 

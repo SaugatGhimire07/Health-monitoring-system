@@ -35,47 +35,6 @@
             </div>
             <nav class="navbar navbar-expand-lg main-navbar">
                 <ul class="navbar-nav navbar-right">
-                  <li class="dropdown dropdown-list-toggle"><a href="#" data-toggle="dropdown" class="nav-link notification-toggle nav-link-lg beep"><i class="bx bx-bell"></i></a>
-                    <div class="dropdown-menu dropdown-list dropdown-menu-right">
-                      <div class="dropdown-header">Notifications
-                        <div class="float-right">
-                          <a href="#">Mark All As Read</a>
-                        </div>
-                      </div>
-                      <div class="dropdown-list-content dropdown-list-icons">
-                        <a href="#" class="dropdown-item dropdown-item-unread">
-                          <div class="dropdown-item-icon bg-primary text-white">
-                            <i class="bx bx-code"></i>
-                          </div>
-                          <div class="dropdown-item-desc">
-                            Fall detected!
-                            <div class="time text-primary">2 Min Ago</div>
-                          </div>
-                        </a>
-                        <a href="#" class="dropdown-item">
-                          <div class="dropdown-item-icon bg-info text-white">
-                            <i class="bx bx-user"></i>
-                          </div>
-                          <div class="dropdown-item-desc">
-                            <b>You</b> and <b>Dedik Sugiharto</b> are now friends
-                            <div class="time">10 Hours Ago</div>
-                          </div>
-                        </a>
-                        <a href="#" class="dropdown-item">
-                          <div class="dropdown-item-icon bg-success text-white">
-                            <i class="bx bx-bell"></i>
-                          </div>
-                          <div class="dropdown-item-desc">
-                            Fall detected!
-                            <div class="time">Yesterday</div>
-                          </div>
-                        </a>
-                      </div>
-                      <div class="dropdown-footer text-center">
-                        <a href="#">View All <i class="fas fa-chevron-right"></i></a>
-                      </div>
-                    </div>
-                  </li>
                   <li class="dropdown"><a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle nav-link-lg nav-link-user">
                     <img alt="image" src="{{ asset('images/undraw_profile.svg')}}" class="rounded-circle mr-1">
                     <div class="d-sm-none d-lg-inline-block">Hi, {{ Auth::user()->name }}</div></a>
